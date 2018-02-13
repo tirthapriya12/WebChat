@@ -21,6 +21,27 @@
     <div class="header">
         <h1>WebChat</h1>
     </div>
+    <!--name input modal -->
+    <div style="z-index:10000" class="modal fade" id="nameModal" tabindex="-1" role="dialog" aria-labelledby="Enter name" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div style="z-index:10000" class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Enter your Name</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+       <input id='name' type="text">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" id='done' class="btn btn-primary">Done</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- modal end -->
     <div class="container-fluid">
         <div class="row main-container">
             <div class="col-sm-4 left-container">
